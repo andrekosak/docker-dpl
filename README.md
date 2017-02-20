@@ -4,10 +4,14 @@
 
 A minimalistic alpine-based docker image for [dpl](https://github.com/travis-ci/dpl).
 
-## Usage example
+## Basic example
 
 `docker run -ti --rm --volume=$(pwd):/opt/project andrejkosyak/docker-dpl dpl --provider=...`
 
-## How to use Dpl?
+## Deploying app to Heroku
+
+`docker run -ti --rm --volume=$(pwd):/opt/project andrejkosyak/docker-dpl dpl --provider=heroku --api-key=YOUR_API_KEY --app=YOUR_APP_NAME`
+
+## More examples for using dpl?
 
 https://github.com/travis-ci/dpl
